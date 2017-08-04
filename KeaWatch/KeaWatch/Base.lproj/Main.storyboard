@@ -56,23 +56,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3JN-Wh-C4s">
-                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have already made the observation." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3JN-Wh-C4s">
+                                <rect key="frame" x="35" y="323.5" width="305" height="20.5"/>
                                 <edgeInsets key="layoutMargins" top="8" left="10" bottom="8" right="10"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">Let us assume that you have already made the observation. It is an observation created from your imagination. You are satisfied with the quality of this observation. You're now welcome to traverse back to the original screen.</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="obi-wan" translatesAutoresizingMaskIntoConstraints="NO" id="gAs-va-pZM">
+                                <rect key="frame" x="35" y="103" width="305" height="186"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3JN-Wh-C4s" firstAttribute="centerY" secondItem="Y6o-nX-ZuW" secondAttribute="centerY" id="1JK-QZ-HBR"/>
+                            <constraint firstItem="3JN-Wh-C4s" firstAttribute="centerX" secondItem="Y6o-nX-ZuW" secondAttribute="centerX" id="ENp-9c-whu"/>
+                            <constraint firstItem="3JN-Wh-C4s" firstAttribute="top" secondItem="gAs-va-pZM" secondAttribute="bottom" constant="34.5" id="f3d-XF-si9"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOp-ol-zii" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -98,4 +98,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="118.29085457271366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="obi-wan" width="580" height="253"/>
+    </resources>
 </document>
