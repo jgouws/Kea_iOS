@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:KeaWatch.xcodeproj">
+      location = "self:/Users/mikey/Documents/SWEN302/Kea_iOS/KeaWatch/KakaGo.xcodeproj">
    </FileRef>
 </Workspace>

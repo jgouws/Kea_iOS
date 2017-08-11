@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					A6A181431F2AF027001E94DD = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 875TLX9Q9P;
 						ProvisioningStyle = Automatic;
 					};
 					A6A181571F2AF029001E94DD = {
@@ -207,7 +208,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A6A1813F1F2AF027001E94DD /* Build configuration list for PBXProject "KeaWatch" */;
+			buildConfigurationList = A6A1813F1F2AF027001E94DD /* Build configuration list for PBXProject "KakaGo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -414,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 875TLX9Q9P;
 				INFOPLIST_FILE = KeaWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crazyinsomniac.KeaWatch;
@@ -426,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 875TLX9Q9P;
 				INFOPLIST_FILE = KeaWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crazyinsomniac.KeaWatch;
@@ -491,7 +494,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A6A1813F1F2AF027001E94DD /* Build configuration list for PBXProject "KeaWatch" */ = {
+		A6A1813F1F2AF027001E94DD /* Build configuration list for PBXProject "KakaGo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A6A1816A1F2AF029001E94DD /* Debug */,
@@ -507,6 +510,7 @@
 				A6A1816E1F2AF029001E94DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6A1816F1F2AF029001E94DD /* Build configuration list for PBXNativeTarget "KeaWatchTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +519,7 @@
 				A6A181711F2AF029001E94DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6A181721F2AF029001E94DD /* Build configuration list for PBXNativeTarget "KeaWatchUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +528,7 @@
 				A6A181741F2AF029001E94DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
