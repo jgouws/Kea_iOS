@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LiQ-Cn-DjC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pZW-Ay-7Kh">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -96,6 +96,80 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PSb-h3-McA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="118.29085457271366"/>
+        </scene>
+        <!--New Observation-->
+        <scene sceneID="Rwc-74-fl1">
+            <objects>
+                <viewController id="jrm-it-aAj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="grD-Ko-5jV"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZIm-zL-2AA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vmd-mg-DVQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="obi-wan" translatesAutoresizingMaskIntoConstraints="NO" id="HCb-Yx-HL1">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="New Observation" id="KvB-KH-N6T"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mjv-SC-BTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734" y="1200"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Xjx-sP-inS">
+            <objects>
+                <viewController id="OuI-oD-xhG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bV4-p9-SzM"/>
+                        <viewControllerLayoutGuide type="bottom" id="myl-zB-eje"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vCY-kk-Wjj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="fc9-SU-Cyu">
+                                <rect key="frame" x="135.5" y="323.5" width="104" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fc9-SU-Cyu" firstAttribute="centerX" secondItem="vCY-kk-Wjj" secondAttribute="centerX" id="Tss-Yg-HPe"/>
+                            <constraint firstItem="fc9-SU-Cyu" firstAttribute="centerY" secondItem="vCY-kk-Wjj" secondAttribute="centerY" id="enZ-YE-8Ke"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="xQd-cE-dq4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f9b-0o-5u0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028" y="1115"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8oD-wC-Ad6">
+            <objects>
+                <tabBarController id="pZW-Ay-7Kh" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Xgb-sK-bB3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="OuI-oD-xhG" kind="relationship" relationship="viewControllers" id="0M6-ju-aIv"/>
+                        <segue destination="jrm-it-aAj" kind="relationship" relationship="viewControllers" id="ZzU-Fv-vSe"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R1E-T1-Trh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99" y="1200"/>
         </scene>
     </scenes>
     <resources>
