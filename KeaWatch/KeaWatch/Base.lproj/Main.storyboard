@@ -116,15 +116,18 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="obi-wan" translatesAutoresizingMaskIntoConstraints="NO" id="dYZ-9s-NVP">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="253"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Insert your observation here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p7Y-cD-Dg5">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Insert your observation here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p7Y-cD-Dg5">
                                         <rect key="frame" x="0.0" y="273" width="343" height="275"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afz-es-iro">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afz-es-iro">
                                         <rect key="frame" x="0.0" y="568" width="343" height="30"/>
-                                        <state key="normal" title="Post Observation"/>
+                                        <color key="backgroundColor" red="0.14335937181677014" green="0.70102007772020725" blue="0.026594955681846166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Post Observation">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -136,8 +139,8 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="qlj-OQ-Ghy" secondAttribute="trailing" id="68A-C6-c4i"/>
                             <constraint firstItem="qlj-OQ-Ghy" firstAttribute="top" secondItem="grD-Ko-5jV" secondAttribute="bottom" id="MN7-bs-Fdg"/>
+                            <constraint firstItem="ZIm-zL-2AA" firstAttribute="top" secondItem="qlj-OQ-Ghy" secondAttribute="bottom" id="dr6-e0-Dg8"/>
                             <constraint firstItem="qlj-OQ-Ghy" firstAttribute="leading" secondItem="Vmd-mg-DVQ" secondAttribute="leadingMargin" id="wjX-8K-cbA"/>
-                            <constraint firstItem="ZIm-zL-2AA" firstAttribute="top" secondItem="qlj-OQ-Ghy" secondAttribute="bottom" id="ykc-eD-zgB"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="New Observation" id="KvB-KH-N6T"/>
