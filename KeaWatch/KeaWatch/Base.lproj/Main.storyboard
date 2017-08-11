@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -109,12 +110,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="obi-wan" translatesAutoresizingMaskIntoConstraints="NO" id="HCb-Yx-HL1">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="qlj-OQ-Ghy">
+                                <rect key="frame" x="16" y="20" width="343" height="598"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="obi-wan" translatesAutoresizingMaskIntoConstraints="NO" id="dYZ-9s-NVP">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="253"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Insert your observation here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p7Y-cD-Dg5">
+                                        <rect key="frame" x="0.0" y="273" width="343" height="275"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afz-es-iro">
+                                        <rect key="frame" x="0.0" y="568" width="343" height="30"/>
+                                        <state key="normal" title="Post Observation"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="p7Y-cD-Dg5" firstAttribute="top" secondItem="dYZ-9s-NVP" secondAttribute="bottom" constant="20" id="kO1-u2-GQU"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="qlj-OQ-Ghy" secondAttribute="trailing" id="68A-C6-c4i"/>
+                            <constraint firstItem="qlj-OQ-Ghy" firstAttribute="top" secondItem="grD-Ko-5jV" secondAttribute="bottom" id="MN7-bs-Fdg"/>
+                            <constraint firstItem="qlj-OQ-Ghy" firstAttribute="leading" secondItem="Vmd-mg-DVQ" secondAttribute="leadingMargin" id="wjX-8K-cbA"/>
+                            <constraint firstItem="ZIm-zL-2AA" firstAttribute="top" secondItem="qlj-OQ-Ghy" secondAttribute="bottom" id="ykc-eD-zgB"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="New Observation" id="KvB-KH-N6T"/>
                 </viewController>
