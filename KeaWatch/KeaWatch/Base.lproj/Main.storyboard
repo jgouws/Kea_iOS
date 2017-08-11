@@ -43,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1764.5" y="1789.5"/>
+            <point key="canvasLocation" x="2169" y="1789"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mOF-bL-yea">
@@ -87,7 +87,7 @@
         <!--New-->
         <scene sceneID="Rwc-74-fl1">
             <objects>
-                <viewController id="jrm-it-aAj" sceneMemberID="viewController">
+                <viewController id="jrm-it-aAj" customClass="NewObservationViewController" customModule="KeaWatch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="grD-Ko-5jV"/>
                         <viewControllerLayoutGuide type="bottom" id="ZIm-zL-2AA"/>
@@ -96,20 +96,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K3N-Xc-54T">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="qlj-OQ-Ghy">
-                                <rect key="frame" x="16" y="40" width="343" height="558"/>
+                                <rect key="frame" x="16" y="84" width="343" height="519"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="obi-wan" translatesAutoresizingMaskIntoConstraints="NO" id="dYZ-9s-NVP">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="253"/>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Insert your observation here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p7Y-cD-Dg5">
-                                        <rect key="frame" x="0.0" y="273" width="343" height="235"/>
+                                        <rect key="frame" x="0.0" y="273" width="343" height="196"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afz-es-iro">
-                                        <rect key="frame" x="0.0" y="528" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="489" width="343" height="30"/>
                                         <color key="backgroundColor" red="0.14335937181677014" green="0.70102007772020725" blue="0.026594955681846166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Post Observation">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -130,15 +134,19 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="New" id="KvB-KH-N6T"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mjv-SC-BTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2440.5" y="1789.5"/>
+            <point key="canvasLocation" x="3254" y="1789"/>
         </scene>
         <!--Home-->
         <scene sceneID="Xjx-sP-inS">
             <objects>
-                <viewController id="OuI-oD-xhG" sceneMemberID="viewController">
+                <viewController id="OuI-oD-xhG" customClass="HomeViewController" customModule="KeaWatch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bV4-p9-SzM"/>
                         <viewControllerLayoutGuide type="bottom" id="myl-zB-eje"/>
