@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A619F7B51F3D71A600E3B1C4 /* NewObservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A619F7B41F3D71A600E3B1C4 /* NewObservationViewController.swift */; };
+		A619F7B71F3D73AA00E3B1C4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A619F7B61F3D73AA00E3B1C4 /* HomeViewController.swift */; };
 		A6A181481F2AF028001E94DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A181471F2AF028001E94DD /* AppDelegate.swift */; };
 		A6A1814A1F2AF028001E94DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A181491F2AF028001E94DD /* ViewController.swift */; };
 		A6A1814D1F2AF028001E94DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A1814B1F2AF028001E94DD /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A619F7B41F3D71A600E3B1C4 /* NewObservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewObservationViewController.swift; sourceTree = "<group>"; };
+		A619F7B61F3D73AA00E3B1C4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A6A181441F2AF028001E94DD /* KeaWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeaWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A181471F2AF028001E94DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6A181491F2AF028001E94DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				A6A181471F2AF028001E94DD /* AppDelegate.swift */,
 				A6A181491F2AF028001E94DD /* ViewController.swift */,
 				A6A1814B1F2AF028001E94DD /* Main.storyboard */,
+				A619F7B61F3D73AA00E3B1C4 /* HomeViewController.swift */,
+				A619F7B41F3D71A600E3B1C4 /* NewObservationViewController.swift */,
 				A6A1814E1F2AF028001E94DD /* Assets.xcassets */,
 				A6A181501F2AF028001E94DD /* LaunchScreen.storyboard */,
 				A6A181531F2AF028001E94DD /* Info.plist */,
@@ -193,6 +199,7 @@
 				TargetAttributes = {
 					A6A181431F2AF027001E94DD = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 875TLX9Q9P;
 						ProvisioningStyle = Automatic;
 					};
 					A6A181571F2AF029001E94DD = {
@@ -207,7 +214,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A6A1813F1F2AF027001E94DD /* Build configuration list for PBXProject "KeaWatch" */;
+			buildConfigurationList = A6A1813F1F2AF027001E94DD /* Build configuration list for PBXProject "KakaGo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -261,6 +268,8 @@
 			files = (
 				A6A1814A1F2AF028001E94DD /* ViewController.swift in Sources */,
 				A6A181481F2AF028001E94DD /* AppDelegate.swift in Sources */,
+				A619F7B51F3D71A600E3B1C4 /* NewObservationViewController.swift in Sources */,
+				A619F7B71F3D73AA00E3B1C4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 875TLX9Q9P;
 				INFOPLIST_FILE = KeaWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crazyinsomniac.KeaWatch;
@@ -426,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 875TLX9Q9P;
 				INFOPLIST_FILE = KeaWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crazyinsomniac.KeaWatch;
@@ -491,7 +502,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A6A1813F1F2AF027001E94DD /* Build configuration list for PBXProject "KeaWatch" */ = {
+		A6A1813F1F2AF027001E94DD /* Build configuration list for PBXProject "KakaGo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A6A1816A1F2AF029001E94DD /* Debug */,
@@ -507,6 +518,7 @@
 				A6A1816E1F2AF029001E94DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6A1816F1F2AF029001E94DD /* Build configuration list for PBXNativeTarget "KeaWatchTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +527,7 @@
 				A6A181711F2AF029001E94DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6A181721F2AF029001E94DD /* Build configuration list for PBXNativeTarget "KeaWatchUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +536,7 @@
 				A6A181741F2AF029001E94DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

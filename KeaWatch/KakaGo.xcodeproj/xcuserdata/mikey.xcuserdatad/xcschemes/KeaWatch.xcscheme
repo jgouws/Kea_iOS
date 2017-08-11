@@ -17,7 +17,7 @@
                BlueprintIdentifier = "A6A181431F2AF027001E94DD"
                BuildableName = "KeaWatch.app"
                BlueprintName = "KeaWatch"
-               ReferencedContainer = "container:KeaWatch.xcodeproj">
+               ReferencedContainer = "container:KakaGo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "A6A181571F2AF029001E94DD"
                BuildableName = "KeaWatchTests.xctest"
                BlueprintName = "KeaWatchTests"
-               ReferencedContainer = "container:KeaWatch.xcodeproj">
+               ReferencedContainer = "container:KakaGo.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,7 +45,7 @@
                BlueprintIdentifier = "A6A181621F2AF029001E94DD"
                BuildableName = "KeaWatchUITests.xctest"
                BlueprintName = "KeaWatchUITests"
-               ReferencedContainer = "container:KeaWatch.xcodeproj">
+               ReferencedContainer = "container:KakaGo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,7 +55,7 @@
             BlueprintIdentifier = "A6A181431F2AF027001E94DD"
             BuildableName = "KeaWatch.app"
             BlueprintName = "KeaWatch"
-            ReferencedContainer = "container:KeaWatch.xcodeproj">
+            ReferencedContainer = "container:KakaGo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -78,7 +78,7 @@
             BlueprintIdentifier = "A6A181431F2AF027001E94DD"
             BuildableName = "KeaWatch.app"
             BlueprintName = "KeaWatch"
-            ReferencedContainer = "container:KeaWatch.xcodeproj">
+            ReferencedContainer = "container:KakaGo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -97,7 +97,7 @@
             BlueprintIdentifier = "A6A181431F2AF027001E94DD"
             BuildableName = "KeaWatch.app"
             BlueprintName = "KeaWatch"
-            ReferencedContainer = "container:KeaWatch.xcodeproj">
+            ReferencedContainer = "container:KakaGo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
