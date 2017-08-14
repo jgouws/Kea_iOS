@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KeaWatch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="KeaWatch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -155,7 +155,7 @@
             </objects>
             <point key="canvasLocation" x="3254" y="1789"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="Xjx-sP-inS">
             <objects>
                 <viewController id="OuI-oD-xhG" customClass="HomeViewController" customModule="KeaWatch" customModuleProvider="target" sceneMemberID="viewController">
@@ -180,7 +180,7 @@
                             <constraint firstItem="fc9-SU-Cyu" firstAttribute="centerY" secondItem="vCY-kk-Wjj" secondAttribute="centerY" id="enZ-YE-8Ke"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="xQd-cE-dq4"/>
+                    <tabBarItem key="tabBarItem" title="Home" selectedImage="HomeIcon" id="xQd-cE-dq4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f9b-0o-5u0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,7 +208,7 @@
         <scene sceneID="4eE-JN-fYk">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WCA-xa-yrF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="New" id="45f-93-YtA"/>
+                    <tabBarItem key="tabBarItem" title="New" selectedImage="NewObservationIcon" id="45f-93-YtA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5n2-2Q-chd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -225,6 +225,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="HomeIcon" width="25" height="25"/>
+        <image name="NewObservationIcon" width="25" height="25"/>
         <image name="obi-wan" width="580" height="253"/>
     </resources>
 </document>
