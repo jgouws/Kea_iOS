@@ -1,21 +1,14 @@
 //
-//  NewObservationViewController.swift
+//  CameraView.swift
 //  KakaGo
 //
-//  Created by Mikey Kane on 11/08/17.
+//  Created by Michael Kotlyar on 12/08/17.
 //  Copyright © 2017 Kea Takers. All rights reserved.
 //
 
 import UIKit
 
-class NewObservationViewController: UIViewController {
-    
-    
-    @IBAction func postObservation(_ sender: Any) {
-        // TODO: send image and extra data to server!!!
-        
-        // Then go back to home page with posted notification
-    }
+class CameraView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

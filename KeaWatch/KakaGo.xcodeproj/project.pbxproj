@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C416F0A1F3EC0BE00264E04 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C416F081F3EC0BE00264E04 /* CameraView.swift */; };
+		4C416F0B1F3EC0BE00264E04 /* CameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C416F091F3EC0BE00264E04 /* CameraView.xib */; };
+		4C416F0E1F3EC18700264E04 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C416F0C1F3EC18700264E04 /* GalleryView.swift */; };
+		4C416F0F1F3EC18700264E04 /* GalleryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C416F0D1F3EC18700264E04 /* GalleryView.xib */; };
 		A619F7B51F3D71A600E3B1C4 /* NewObservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A619F7B41F3D71A600E3B1C4 /* NewObservationViewController.swift */; };
 		A619F7B71F3D73AA00E3B1C4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A619F7B61F3D73AA00E3B1C4 /* HomeViewController.swift */; };
 		A6A181481F2AF028001E94DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A181471F2AF028001E94DD /* AppDelegate.swift */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C416F081F3EC0BE00264E04 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		4C416F091F3EC0BE00264E04 /* CameraView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraView.xib; sourceTree = "<group>"; };
+		4C416F0C1F3EC18700264E04 /* GalleryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		4C416F0D1F3EC18700264E04 /* GalleryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GalleryView.xib; sourceTree = "<group>"; };
 		A619F7B41F3D71A600E3B1C4 /* NewObservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewObservationViewController.swift; sourceTree = "<group>"; };
 		A619F7B61F3D73AA00E3B1C4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A6A181441F2AF028001E94DD /* KeaWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeaWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +112,10 @@
 				A6A181471F2AF028001E94DD /* AppDelegate.swift */,
 				A6A181491F2AF028001E94DD /* ViewController.swift */,
 				A6A1814B1F2AF028001E94DD /* Main.storyboard */,
+				4C416F081F3EC0BE00264E04 /* CameraView.swift */,
+				4C416F091F3EC0BE00264E04 /* CameraView.xib */,
+				4C416F0C1F3EC18700264E04 /* GalleryView.swift */,
+				4C416F0D1F3EC18700264E04 /* GalleryView.xib */,
 				A619F7B61F3D73AA00E3B1C4 /* HomeViewController.swift */,
 				A619F7B41F3D71A600E3B1C4 /* NewObservationViewController.swift */,
 				A6A1814E1F2AF028001E94DD /* Assets.xcassets */,
@@ -199,7 +211,7 @@
 				TargetAttributes = {
 					A6A181431F2AF027001E94DD = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 875TLX9Q9P;
+						DevelopmentTeam = W759P56C36;
 						ProvisioningStyle = Automatic;
 					};
 					A6A181571F2AF029001E94DD = {
@@ -240,8 +252,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6A181521F2AF028001E94DD /* LaunchScreen.storyboard in Resources */,
+				4C416F0F1F3EC18700264E04 /* GalleryView.xib in Resources */,
 				A6A1814F1F2AF028001E94DD /* Assets.xcassets in Resources */,
 				A6A1814D1F2AF028001E94DD /* Main.storyboard in Resources */,
+				4C416F0B1F3EC0BE00264E04 /* CameraView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6A1814A1F2AF028001E94DD /* ViewController.swift in Sources */,
+				4C416F0E1F3EC18700264E04 /* GalleryView.swift in Sources */,
 				A6A181481F2AF028001E94DD /* AppDelegate.swift in Sources */,
 				A619F7B51F3D71A600E3B1C4 /* NewObservationViewController.swift in Sources */,
+				4C416F0A1F3EC0BE00264E04 /* CameraView.swift in Sources */,
 				A619F7B71F3D73AA00E3B1C4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,10 +439,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 875TLX9Q9P;
+				DEVELOPMENT_TEAM = W759P56C36;
 				INFOPLIST_FILE = KeaWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.crazyinsomniac.KeaWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mk.KeaWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -436,10 +452,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 875TLX9Q9P;
+				DEVELOPMENT_TEAM = W759P56C36;
 				INFOPLIST_FILE = KeaWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.crazyinsomniac.KeaWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mk.KeaWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
