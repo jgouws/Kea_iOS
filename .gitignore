@@ -1,0 +1,5 @@
+# OS X temporary file
+.DS_Store
+
+# Individual user preferences
+xcuserdata/
