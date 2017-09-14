@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pZW-Ay-7Kh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="e21-PT-HAY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -222,6 +222,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Q5-jC-DoO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1177.5" y="1789.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1mZ-qD-enh">
+            <objects>
+                <viewController id="e21-PT-HAY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="08U-hB-KbA"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mcy-lO-p4D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uUe-FK-leb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgn-BU-sgI">
+                                <rect key="frame" x="160" y="318" width="54" height="30"/>
+                                <state key="normal" title="Camera"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKZ-A1-vhT">
+                                <rect key="frame" x="163" y="258" width="48" height="30"/>
+                                <state key="normal" title="Gallery"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZKZ-A1-vhT" firstAttribute="centerX" secondItem="uUe-FK-leb" secondAttribute="centerX" id="9Bf-Nn-mTi"/>
+                            <constraint firstItem="Zgn-BU-sgI" firstAttribute="top" secondItem="ZKZ-A1-vhT" secondAttribute="bottom" constant="30" id="9oz-MZ-dCq"/>
+                            <constraint firstItem="Zgn-BU-sgI" firstAttribute="centerY" secondItem="uUe-FK-leb" secondAttribute="centerY" id="Km3-li-R0N"/>
+                            <constraint firstItem="Zgn-BU-sgI" firstAttribute="centerX" secondItem="uUe-FK-leb" secondAttribute="centerX" id="Ru0-pO-RyL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fkm-lm-Xjc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852" y="2595.6521739130435"/>
         </scene>
     </scenes>
     <resources>
