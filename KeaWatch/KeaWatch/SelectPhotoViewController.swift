@@ -1,22 +1,17 @@
 //
-//  NewObservationViewController.swift
+//  SelectPhotoViewController.swift
 //  KakaGo
 //
-//  Created by Mikey Kane on 11/08/17.
+//  Created by Mikey Kane on 15/09/17.
 //  Copyright © 2017 Kea Takers. All rights reserved.
 //
 
 import UIKit
 
-class NewObservationViewController: UIViewController {
-    
-    
-    @IBAction func postObservation(_ sender: Any) {
-        // TODO: send image and extra data to server!!!
-        
-        // Then go back to home page with posted notification
-    }
+class SelectPhotoViewController: UIViewController {
 
+    @IBOutlet weak var cameraButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,7 +23,11 @@ class NewObservationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func pickAnImageFromGallery(_ sender: Any) {
+    }
+    
+    @IBAction func pickAnImageFromCamera(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 

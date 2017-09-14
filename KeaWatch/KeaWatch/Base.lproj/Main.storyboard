@@ -43,9 +43,6 @@
                                 <state key="normal" title="Make observation">
                                     <color key="titleColor" red="0.1450980392" green="0.28235294119999998" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="jrm-it-aAj" kind="show" id="olJ-K1-sCk"/>
-                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -95,65 +92,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOp-ol-zii" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2194" y="1030"/>
-        </scene>
-        <!--New-->
-        <scene sceneID="Rwc-74-fl1">
-            <objects>
-                <viewController id="jrm-it-aAj" customClass="NewObservationViewController" customModule="KeaWatch" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="grD-Ko-5jV"/>
-                        <viewControllerLayoutGuide type="bottom" id="ZIm-zL-2AA"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Vmd-mg-DVQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K3N-Xc-54T">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </scrollView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="qlj-OQ-Ghy">
-                                <rect key="frame" x="16" y="84" width="343" height="519"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="obi-wan" translatesAutoresizingMaskIntoConstraints="NO" id="dYZ-9s-NVP">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="253"/>
-                                    </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Insert your observation here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p7Y-cD-Dg5">
-                                        <rect key="frame" x="0.0" y="273" width="343" height="196"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afz-es-iro">
-                                        <rect key="frame" x="0.0" y="489" width="343" height="30"/>
-                                        <color key="backgroundColor" red="0.14335937181677014" green="0.70102007772020725" blue="0.026594955681846166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Post Observation">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="p7Y-cD-Dg5" firstAttribute="top" secondItem="dYZ-9s-NVP" secondAttribute="bottom" constant="20" id="kO1-u2-GQU"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="qlj-OQ-Ghy" secondAttribute="trailing" id="68A-C6-c4i"/>
-                            <constraint firstItem="qlj-OQ-Ghy" firstAttribute="top" secondItem="grD-Ko-5jV" secondAttribute="bottom" constant="20" id="MN7-bs-Fdg"/>
-                            <constraint firstItem="ZIm-zL-2AA" firstAttribute="top" secondItem="qlj-OQ-Ghy" secondAttribute="bottom" constant="20" id="dr6-e0-Dg8"/>
-                            <constraint firstItem="qlj-OQ-Ghy" firstAttribute="leading" secondItem="Vmd-mg-DVQ" secondAttribute="leadingMargin" id="wjX-8K-cbA"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="New" id="KvB-KH-N6T"/>
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="667"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mjv-SC-BTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3254" y="1789"/>
         </scene>
         <!--Home-->
         <scene sceneID="Xjx-sP-inS">
@@ -223,10 +161,10 @@
             </objects>
             <point key="canvasLocation" x="1177.5" y="1789.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Select Photo View Controller-->
         <scene sceneID="1mZ-qD-enh">
             <objects>
-                <viewController id="e21-PT-HAY" sceneMemberID="viewController">
+                <viewController id="e21-PT-HAY" customClass="SelectPhotoViewController" customModule="KeaWatch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="08U-hB-KbA"/>
                         <viewControllerLayoutGuide type="bottom" id="Mcy-lO-p4D"/>
@@ -238,10 +176,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgn-BU-sgI">
                                 <rect key="frame" x="160" y="318" width="54" height="30"/>
                                 <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="pickAnImageFromCamera:" destination="e21-PT-HAY" eventType="touchUpInside" id="TTZ-Wa-V8C"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKZ-A1-vhT">
                                 <rect key="frame" x="163" y="258" width="48" height="30"/>
                                 <state key="normal" title="Gallery"/>
+                                <connections>
+                                    <action selector="pickAnImageFromGallery:" destination="e21-PT-HAY" eventType="touchUpInside" id="1y9-z5-0ux"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -252,6 +196,9 @@
                             <constraint firstItem="Zgn-BU-sgI" firstAttribute="centerX" secondItem="uUe-FK-leb" secondAttribute="centerX" id="Ru0-pO-RyL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cameraButton" destination="Zgn-BU-sgI" id="NDV-KF-Bhk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fkm-lm-Xjc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
