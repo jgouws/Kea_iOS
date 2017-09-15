@@ -19,7 +19,7 @@ class NewObservationViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.submitButton.isEnabled = false
+        //self.submitButton.isEnabled = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,9 +28,29 @@ class NewObservationViewController: UIViewController {
     }
     
     @IBAction func submitObservation(_ sender: UIBarButtonItem) {
-        if let text = self.observationTextField.text {
-            print(text)
+
+        print("send");
+        
+        var request = URLRequest(url: URL(string: "http://localhost:3000/appupload")!)
+        request.httpMethod = "POST"
+        let postString = "data=" + observationTextField.text!;
+        request.httpBody = postString.data(using: .utf8)
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {                                                 // check for fundamental networking error
+                print("error=\(error)")
+                return
+            }
+            
+            if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {           // check for http errors
+                print("statusCode should be 200, but is \(httpStatus.statusCode)")
+                print("response = \(response)")
+            }
+            
+            let responseString = String(data: data, encoding: .utf8)
+            print("responseString = \(responseString)")
         }
+        task.resume()
+        
     }
     
     
