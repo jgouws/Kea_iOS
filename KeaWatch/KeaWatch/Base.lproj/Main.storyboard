@@ -216,10 +216,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k6o-cm-iyI">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k6o-cm-iyI">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="kBr-r7-6Be"/>
+                                    <navigationItem title="Title" id="kBr-r7-6Be">
+                                        <barButtonItem key="rightBarButtonItem" title="Submit" id="4ng-0t-gRx">
+                                            <connections>
+                                                <action selector="submitObservation:" destination="ZD3-dZ-ESV" id="zEE-Pl-Jon"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DzG-vI-8hn">
@@ -239,6 +245,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="k6o-cm-iyI" firstAttribute="leading" secondItem="eVB-Bf-R4q" secondAttribute="leading" id="Buf-pN-xjg"/>
+                            <constraint firstItem="k6o-cm-iyI" firstAttribute="centerX" secondItem="DzG-vI-8hn" secondAttribute="centerX" id="dfw-5o-NTb"/>
                             <constraint firstItem="aPK-N7-GA0" firstAttribute="top" secondItem="DzG-vI-8hn" secondAttribute="bottom" id="i1h-49-dwI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="DzG-vI-8hn" secondAttribute="trailing" id="kV2-pd-b1h"/>
                             <constraint firstItem="DzG-vI-8hn" firstAttribute="top" secondItem="k6o-cm-iyI" secondAttribute="bottom" id="p3O-9R-YWP"/>
@@ -249,6 +257,7 @@
                     <connections>
                         <outlet property="observationImageView" destination="UEQ-Eq-lrt" id="TvC-hJ-8Au"/>
                         <outlet property="observationTextField" destination="CqO-S0-wNS" id="1VP-hd-wZH"/>
+                        <outlet property="submitButton" destination="4ng-0t-gRx" id="Z25-cn-mob"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xyd-BR-tQ5" userLabel="First Responder" sceneMemberID="firstResponder"/>

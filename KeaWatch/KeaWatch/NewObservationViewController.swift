@@ -13,11 +13,13 @@ class NewObservationViewController: UIViewController {
     
     @IBOutlet weak var observationImageView: UIImageView!
     @IBOutlet weak var observationTextField: UITextField!
+    @IBOutlet weak var submitButton: UIBarButtonItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.submitButton.isEnabled = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,6 +27,8 @@ class NewObservationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func submitObservation(_ sender: UIBarButtonItem) {
+    }
     
     
 
