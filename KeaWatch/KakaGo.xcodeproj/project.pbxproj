@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		038D59981F6B4DE5009FA1F7 /* NewObservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038D59971F6B4DE5009FA1F7 /* NewObservationViewController.swift */; };
 		4C416F0A1F3EC0BE00264E04 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C416F081F3EC0BE00264E04 /* CameraView.swift */; };
 		4C416F0B1F3EC0BE00264E04 /* CameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C416F091F3EC0BE00264E04 /* CameraView.xib */; };
 		4C416F0E1F3EC18700264E04 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C416F0C1F3EC18700264E04 /* GalleryView.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		038D59971F6B4DE5009FA1F7 /* NewObservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewObservationViewController.swift; sourceTree = "<group>"; };
 		4C416F081F3EC0BE00264E04 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		4C416F091F3EC0BE00264E04 /* CameraView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraView.xib; sourceTree = "<group>"; };
 		4C416F0C1F3EC18700264E04 /* GalleryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				A6A1814E1F2AF028001E94DD /* Assets.xcassets */,
 				A6A181501F2AF028001E94DD /* LaunchScreen.storyboard */,
 				A6A181531F2AF028001E94DD /* Info.plist */,
+				038D59971F6B4DE5009FA1F7 /* NewObservationViewController.swift */,
 			);
 			path = KeaWatch;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				A6A1814A1F2AF028001E94DD /* ViewController.swift in Sources */,
 				A64A4D4D1F6B35BC00DB854E /* SelectPhotoViewController.swift in Sources */,
 				4C416F0E1F3EC18700264E04 /* GalleryView.swift in Sources */,
+				038D59981F6B4DE5009FA1F7 /* NewObservationViewController.swift in Sources */,
 				A6A181481F2AF028001E94DD /* AppDelegate.swift in Sources */,
 				4C416F0A1F3EC0BE00264E04 /* CameraView.swift in Sources */,
 				A619F7B71F3D73AA00E3B1C4 /* HomeViewController.swift in Sources */,

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="e21-PT-HAY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="e21-PT-HAY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -203,6 +203,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fkm-lm-Xjc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="852" y="2595.6521739130435"/>
+        </scene>
+        <!--New Observation View Controller-->
+        <scene sceneID="Xd8-Vg-Oy1">
+            <objects>
+                <viewController id="ZD3-dZ-ESV" customClass="NewObservationViewController" customModule="KeaWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Cw-kb-GAx"/>
+                        <viewControllerLayoutGuide type="bottom" id="aPK-N7-GA0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eVB-Bf-R4q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DzG-vI-8hn">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UEQ-Eq-lrt">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="323.5"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CqO-S0-wNS">
+                                        <rect key="frame" x="0.0" y="323.5" width="343" height="323.5"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DzG-vI-8hn" firstAttribute="top" secondItem="1Cw-kb-GAx" secondAttribute="bottom" id="4V3-HW-mPc"/>
+                            <constraint firstItem="aPK-N7-GA0" firstAttribute="top" secondItem="DzG-vI-8hn" secondAttribute="bottom" id="i1h-49-dwI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DzG-vI-8hn" secondAttribute="trailing" id="kV2-pd-b1h"/>
+                            <constraint firstItem="DzG-vI-8hn" firstAttribute="leading" secondItem="eVB-Bf-R4q" secondAttribute="leadingMargin" id="tf3-0o-3ZZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="observationImageView" destination="UEQ-Eq-lrt" id="TvC-hJ-8Au"/>
+                        <outlet property="observationTextField" destination="CqO-S0-wNS" id="1VP-hd-wZH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xyd-BR-tQ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2076" y="2595.6521739130435"/>
         </scene>
     </scenes>
     <resources>
