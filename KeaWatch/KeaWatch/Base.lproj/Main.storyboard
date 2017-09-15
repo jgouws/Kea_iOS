@@ -207,7 +207,7 @@
         <!--New Observation View Controller-->
         <scene sceneID="Xd8-Vg-Oy1">
             <objects>
-                <viewController id="ZD3-dZ-ESV" customClass="NewObservationViewController" customModule="KeaWatch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewObservationViewController" id="ZD3-dZ-ESV" customClass="NewObservationViewController" customModule="KeaWatch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1Cw-kb-GAx"/>
                         <viewControllerLayoutGuide type="bottom" id="aPK-N7-GA0"/>

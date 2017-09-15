@@ -28,6 +28,9 @@ class NewObservationViewController: UIViewController {
     }
     
     @IBAction func submitObservation(_ sender: UIBarButtonItem) {
+        if let text = self.observationTextField.text {
+            print(text)
+        }
     }
     
     
