@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewObservationViewController: UIViewController {
+class NewObservationViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var observationImageView: UIImageView!
@@ -20,14 +20,19 @@ class NewObservationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        //self.submitButton.isEnabled = false
-        
+        // Set the text field's delegate
+        observationTextField.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         observationImageView.image = observationPhoto
+        subscribeToKeyboardNotifications()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        unsubscribeToKeyboardNotifications()
     }
 
     
@@ -57,16 +62,49 @@ class NewObservationViewController: UIViewController {
         
     }
     
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK: Text Field Delegate methods
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return textField.resignFirstResponder()
     }
-    */
-
+    
+    // MARK: Keyboard handling methods
+    func subscribeToKeyboardNotifications() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillShow(_:)),
+                                               name: .UIKeyboardWillShow,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillHide(_:)),
+                                               name: .UIKeyboardWillHide,
+                                               object: nil)
+    }
+    
+    func unsubscribeToKeyboardNotifications() {
+        NotificationCenter.default.removeObserver(self,
+                                                  name: .UIKeyboardWillShow,
+                                                  object: nil)
+        NotificationCenter.default.removeObserver(self,
+                                                  name: .UIKeyboardWillHide,
+                                                  object: nil)
+        
+    }
+    
+    // Keyboard call methods
+    func keyboardWillShow(_ notification: Notification) {
+        if observationTextField.isFirstResponder {
+            view.frame.origin.y -= getKeyboardHeight(notification)
+        }
+    }
+    
+    func keyboardWillHide(_ notification: Notification) {
+        if observationTextField.isFirstResponder {
+            view.frame.origin.y += getKeyboardHeight(notification)
+        }
+    }
+    
+    func getKeyboardHeight(_ notification: Notification) -> CGFloat{
+        let userInfo = notification.userInfo
+        let keyboardSize = userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue
+        return keyboardSize.cgRectValue.height
+    }
 }
