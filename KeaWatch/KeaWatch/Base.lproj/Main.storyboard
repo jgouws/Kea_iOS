@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="e21-PT-HAY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fQz-jQ-dnf">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -161,6 +161,22 @@
             </objects>
             <point key="canvasLocation" x="1177.5" y="1789.5"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="is2-jy-sp9">
+            <objects>
+                <navigationController id="fQz-jQ-dnf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="htI-bO-CKH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="e21-PT-HAY" kind="relationship" relationship="rootViewController" id="Tfq-rV-2LT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ggs-yZ-6RU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-34" y="2596"/>
+        </scene>
         <!--Select Photo View Controller-->
         <scene sceneID="1mZ-qD-enh">
             <objects>
@@ -196,6 +212,7 @@
                             <constraint firstItem="Zgn-BU-sgI" firstAttribute="centerX" secondItem="uUe-FK-leb" secondAttribute="centerX" id="Ru0-pO-RyL"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="wSF-az-9zp"/>
                     <connections>
                         <outlet property="cameraButton" destination="Zgn-BU-sgI" id="NDV-KF-Bhk"/>
                     </connections>
