@@ -14,18 +14,22 @@ class NewObservationViewController: UIViewController {
     @IBOutlet weak var observationImageView: UIImageView!
     @IBOutlet weak var observationTextField: UITextField!
     @IBOutlet weak var submitButton: UIBarButtonItem!
+    
+    var observationPhoto: UIImage!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         //self.submitButton.isEnabled = false
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        observationImageView.image = observationPhoto
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     @IBAction func submitObservation(_ sender: UIBarButtonItem) {
 

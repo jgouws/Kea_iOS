@@ -38,9 +38,17 @@ class SelectPhotoViewController: UIViewController, UIImagePickerControllerDelega
     
     // MARK: Image Picker Controller Delegate methods
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
         print("image selected")
+        
+        guard let observationPic = info[UIImagePickerControllerOriginalImage] as? UIImage else {
+            print("Failed to select image")
+            return
+        }
+        
         let observationController = self.storyboard!.instantiateViewController(withIdentifier: "NewObservationViewController") as! NewObservationViewController
         
+        observationController.observationPhoto = observationPic
         self.navigationController?.pushViewController(observationController, animated: true)
         
         picker.dismiss(animated: true, completion: nil)
