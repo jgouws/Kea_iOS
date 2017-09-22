@@ -91,15 +91,15 @@ class NewObservationViewController: UIViewController, UITextFieldDelegate {
     
     // Keyboard call methods
     func keyboardWillShow(_ notification: Notification) {
-        if observationTextField.isFirstResponder {
-            view.frame.origin.y -= getKeyboardHeight(notification)
-        }
+//        if observationTextField.isFirstResponder {
+//            view.frame.origin.y -= getKeyboardHeight(notification)
+//        }
     }
     
     func keyboardWillHide(_ notification: Notification) {
-        if observationTextField.isFirstResponder {
-            view.frame.origin.y += getKeyboardHeight(notification)
-        }
+//        if observationTextField.isFirstResponder {
+//            view.frame.origin.y += getKeyboardHeight(notification)
+//        }
     }
     
     func getKeyboardHeight(_ notification: Notification) -> CGFloat{

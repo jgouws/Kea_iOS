@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fQz-jQ-dnf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fQz-jQ-dnf">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -149,7 +149,7 @@
                     <tabBarItem key="tabBarItem" title="New" selectedImage="NewObservationIcon" id="45f-93-YtA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5n2-2Q-chd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -166,7 +166,7 @@
             <objects>
                 <navigationController id="fQz-jQ-dnf" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="htI-bO-CKH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -233,48 +233,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k6o-cm-iyI">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Title" id="kBr-r7-6Be">
-                                        <barButtonItem key="rightBarButtonItem" title="Submit" id="4ng-0t-gRx">
-                                            <connections>
-                                                <action selector="submitObservation:" destination="ZD3-dZ-ESV" id="zEE-Pl-Jon"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DzG-vI-8hn">
-                                <rect key="frame" x="16" y="44" width="343" height="623"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UEQ-Eq-lrt">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="311.5"/>
-                                    </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Give a little description about what you saw" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CqO-S0-wNS">
-                                        <rect key="frame" x="0.0" y="311.5" width="343" height="311.5"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UEQ-Eq-lrt">
+                                <rect key="frame" x="16" y="20" width="343" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="63q-2W-0aN"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Place observation here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D4j-eJ-mW9">
+                                <rect key="frame" x="16" y="280" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Ccf-zf-DVV"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="k6o-cm-iyI" firstAttribute="leading" secondItem="eVB-Bf-R4q" secondAttribute="leading" id="Buf-pN-xjg"/>
-                            <constraint firstItem="k6o-cm-iyI" firstAttribute="centerX" secondItem="DzG-vI-8hn" secondAttribute="centerX" id="dfw-5o-NTb"/>
-                            <constraint firstItem="aPK-N7-GA0" firstAttribute="top" secondItem="DzG-vI-8hn" secondAttribute="bottom" id="i1h-49-dwI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="DzG-vI-8hn" secondAttribute="trailing" id="kV2-pd-b1h"/>
-                            <constraint firstItem="DzG-vI-8hn" firstAttribute="top" secondItem="k6o-cm-iyI" secondAttribute="bottom" id="p3O-9R-YWP"/>
-                            <constraint firstItem="k6o-cm-iyI" firstAttribute="top" secondItem="eVB-Bf-R4q" secondAttribute="top" id="rIb-YX-b5u"/>
-                            <constraint firstItem="DzG-vI-8hn" firstAttribute="leading" secondItem="eVB-Bf-R4q" secondAttribute="leadingMargin" id="tf3-0o-3ZZ"/>
+                            <constraint firstItem="D4j-eJ-mW9" firstAttribute="trailing" secondItem="eVB-Bf-R4q" secondAttribute="trailingMargin" id="4Gy-Rp-Udm"/>
+                            <constraint firstItem="UEQ-Eq-lrt" firstAttribute="trailing" secondItem="eVB-Bf-R4q" secondAttribute="trailingMargin" id="A5R-je-Ryv"/>
+                            <constraint firstItem="D4j-eJ-mW9" firstAttribute="top" secondItem="UEQ-Eq-lrt" secondAttribute="bottom" constant="10" id="JRk-lF-yBX"/>
+                            <constraint firstItem="UEQ-Eq-lrt" firstAttribute="leading" secondItem="eVB-Bf-R4q" secondAttribute="leadingMargin" id="jM2-3e-D7I"/>
+                            <constraint firstItem="D4j-eJ-mW9" firstAttribute="leading" secondItem="eVB-Bf-R4q" secondAttribute="leadingMargin" id="sus-SY-kOj"/>
+                            <constraint firstItem="UEQ-Eq-lrt" firstAttribute="top" secondItem="1Cw-kb-GAx" secondAttribute="bottom" id="uEg-Af-eGK"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="observationImageView" destination="UEQ-Eq-lrt" id="TvC-hJ-8Au"/>
-                        <outlet property="observationTextField" destination="CqO-S0-wNS" id="1VP-hd-wZH"/>
-                        <outlet property="submitButton" destination="4ng-0t-gRx" id="Z25-cn-mob"/>
+                        <outlet property="observationTextField" destination="D4j-eJ-mW9" id="dei-IH-tnz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xyd-BR-tQ5" userLabel="First Responder" sceneMemberID="firstResponder"/>

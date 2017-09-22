@@ -32,6 +32,7 @@ class SelectPhotoViewController: UIViewController, UIImagePickerControllerDelega
     
     @IBAction func pickAnImageFromCamera(_ sender: Any) {
         let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
         imagePicker.sourceType = .camera
         present(imagePicker, animated: true, completion: nil)
     }
