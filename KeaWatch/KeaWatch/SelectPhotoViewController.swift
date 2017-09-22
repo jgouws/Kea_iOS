@@ -28,7 +28,7 @@ import UIKit
  */
 class SelectPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-/* MARK: Initialise variables */
+    // MARK: Initialise variables 
  
     // IBOutlets are references to a UI view on the screen.
     // weak means it's possible it won't be referenced, I think...
@@ -37,7 +37,8 @@ class SelectPhotoViewController: UIViewController, UIImagePickerControllerDelega
     @IBOutlet weak var cameraButton: UIButton!
     
 
-/* MARK: ViewController override methods */
+    
+    // MARK: ViewController override methods
     
     /*
      Overridden on call method. This calls just before the view appears on screen.
@@ -49,7 +50,10 @@ class SelectPhotoViewController: UIViewController, UIImagePickerControllerDelega
         cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
     }
     
-    /* MARK: Button actions */
+    
+    
+    
+    // MARK: Button actions
     
     /**
      Method executes when "gallery" button is touched. All it does is display the gallery.
@@ -97,15 +101,15 @@ class SelectPhotoViewController: UIViewController, UIImagePickerControllerDelega
         present(imagePicker, animated: true, completion: nil)
     }
     
-    /* MARK: Image Picker Controller Delegate methods */
+    
+    
+    // MARK: Image Picker Controller Delegate methods 
     
     /**
      This method is called when an image is selected on the image picker controller.
      It's also called when a photo is taken and confirmed.
      */
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        
-        print("image selected") // I was debugging, I should probably delete this.
         
         /* get selected image */
         // guard is like an if statement but if the conditions are not met
