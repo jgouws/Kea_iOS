@@ -2,7 +2,7 @@
 //  NewObservationViewController.swift
 //  KakaGo
 //
-//  Created by Nigel Munro on 15/09/17.
+//  Created by Nigel Munro and Michael Kane on 15/09/17.
 //  Copyright © 2017 Kea Takers. All rights reserved.
 //
 
