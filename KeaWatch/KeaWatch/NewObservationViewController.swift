@@ -8,6 +8,14 @@
 
 import UIKit
 
+extension NSMutableData {
+    
+    func appendString(string: String) {
+        let data = string.data(using: String.Encoding.utf8, allowLossyConversion: true)
+        self.append(data!)
+    }
+}
+
 class NewObservationViewController: UIViewController, UITextFieldDelegate {
     
     
@@ -39,27 +47,85 @@ class NewObservationViewController: UIViewController, UITextFieldDelegate {
     @IBAction func submitObservation(_ sender: UIBarButtonItem) {
 
         print("send");
+
         
-        var request = URLRequest(url: URL(string: "http://localhost:3000/appupload")!)
+        let url = NSURL(string: "http://localhost:3000/uploadedfromapp")
+        
+        let request = NSMutableURLRequest(url: url! as URL)
         request.httpMethod = "POST"
-        let postString = "data=" + observationTextField.text!;
-        request.httpBody = postString.data(using: .utf8)
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let data = data, error == nil else {                                                 // check for fundamental networking error
-                print("error=\(error)")
+        
+        let boundary = generateBoundaryString()
+        
+        //define the multipart request type
+        
+        request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
+        
+        if (observationImageView.image == nil)
+        {
+            return
+        }
+        //UIImagePNGRepresentation(observationImageView.image!)
+        let image_data = UIImageJPEGRepresentation(observationImageView.image!, 1)
+        
+        
+        if(image_data == nil)
+        {
+            return
+        }
+        
+        
+        let body = NSMutableData()
+        
+        let fname = "test.jpg"
+        let mimetype = "image/jpg"
+        
+        //define the data post parameter
+        
+        body.append("--\(boundary)\r\n".data(using: String.Encoding.utf8)!)
+        body.append("Content-Disposition:form-data; name=\"test\"\r\n\r\n".data(using: String.Encoding.utf8)!)
+        body.append("hi\r\n".data(using: String.Encoding.utf8)!)
+        
+        
+        
+        body.append("--\(boundary)\r\n".data(using: String.Encoding.utf8)!)
+        body.append("Content-Disposition:form-data; name=\"file\"; filename=\"\(fname)\"\r\n".data(using: String.Encoding.utf8)!)
+        body.append("Content-Type: \(mimetype)\r\n\r\n".data(using: String.Encoding.utf8)!)
+        body.append(image_data!)
+        body.append("\r\n".data(using: String.Encoding.utf8)!)
+        
+        
+        body.append("--\(boundary)--\r\n".data(using: String.Encoding.utf8)!)
+        
+        
+        
+        request.httpBody = body as Data
+        
+        let session = URLSession.shared
+        
+        
+        let task = session.dataTask(with: request as URLRequest) {
+            (
+            data, response, error) in
+            
+            guard let _:NSData = data as NSData?, let _:URLResponse = response, error == nil else {
+                print("error")
                 return
             }
             
-            if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {           // check for http errors
-                print("statusCode should be 200, but is \(httpStatus.statusCode)")
-                print("response = \(response)")
-            }
+            let dataString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+            //print(dataString as String)
             
-            let responseString = String(data: data, encoding: .utf8)
-            print("responseString = \(responseString)")
         }
+        
         task.resume()
         
+        
+    }
+    
+
+    
+    func generateBoundaryString() -> String {
+        return "Boundary-\(NSUUID().uuidString)"
     }
     
     // MARK: Text Field Delegate methods
