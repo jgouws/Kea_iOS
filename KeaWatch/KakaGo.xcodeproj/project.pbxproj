@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		038D59981F6B4DE5009FA1F7 /* NewObservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038D59971F6B4DE5009FA1F7 /* NewObservationViewController.swift */; };
+		4C416F0A1F3EC0BE00264E04 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C416F081F3EC0BE00264E04 /* CameraView.swift */; };
+		4C416F0B1F3EC0BE00264E04 /* CameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C416F091F3EC0BE00264E04 /* CameraView.xib */; };
+		4C416F0E1F3EC18700264E04 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C416F0C1F3EC18700264E04 /* GalleryView.swift */; };
+		4C416F0F1F3EC18700264E04 /* GalleryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C416F0D1F3EC18700264E04 /* GalleryView.xib */; };
+		A619F7B71F3D73AA00E3B1C4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A619F7B61F3D73AA00E3B1C4 /* HomeViewController.swift */; };
+		A64A4D4D1F6B35BC00DB854E /* SelectPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64A4D4C1F6B35BC00DB854E /* SelectPhotoViewController.swift */; };
+		A6A181481F2AF028001E94DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A181471F2AF028001E94DD /* AppDelegate.swift */; };
+		A6A1814A1F2AF028001E94DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A181491F2AF028001E94DD /* ViewController.swift */; };
+		A6A1814D1F2AF028001E94DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A1814B1F2AF028001E94DD /* Main.storyboard */; };
+		A6A1814F1F2AF028001E94DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A1814E1F2AF028001E94DD /* Assets.xcassets */; };
+		A6A181521F2AF028001E94DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A181501F2AF028001E94DD /* LaunchScreen.storyboard */; };
+		A6A1815D1F2AF029001E94DD /* KeaWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A1815C1F2AF029001E94DD /* KeaWatchTests.swift */; };
+		A6A181681F2AF029001E94DD /* KeaWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A181671F2AF029001E94DD /* KeaWatchUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6A181591F2AF029001E94DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6A1813C1F2AF027001E94DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6A181431F2AF027001E94DD;
+			remoteInfo = KeaWatch;
+		};
+		A6A181641F2AF029001E94DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6A1813C1F2AF027001E94DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6A181431F2AF027001E94DD;
+			remoteInfo = KeaWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		038D59971F6B4DE5009FA1F7 /* NewObservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewObservationViewController.swift; sourceTree = "<group>"; };
+		4C416F081F3EC0BE00264E04 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		4C416F091F3EC0BE00264E04 /* CameraView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraView.xib; sourceTree = "<group>"; };
+		4C416F0C1F3EC18700264E04 /* GalleryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		4C416F0D1F3EC18700264E04 /* GalleryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GalleryView.xib; sourceTree = "<group>"; };
+		A619F7B61F3D73AA00E3B1C4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A64A4D4C1F6B35BC00DB854E /* SelectPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPhotoViewController.swift; sourceTree = "<group>"; };
+		A6A181441F2AF028001E94DD /* KeaWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeaWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6A181471F2AF028001E94DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6A181491F2AF028001E94DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6A1814C1F2AF028001E94DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6A1814E1F2AF028001E94DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6A181511F2AF028001E94DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6A181531F2AF028001E94DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6A181581F2AF029001E94DD /* KeaWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeaWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6A1815C1F2AF029001E94DD /* KeaWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeaWatchTests.swift; sourceTree = "<group>"; };
+		A6A1815E1F2AF029001E94DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6A181631F2AF029001E94DD /* KeaWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeaWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6A181671F2AF029001E94DD /* KeaWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeaWatchUITests.swift; sourceTree = "<group>"; };
+		A6A181691F2AF029001E94DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6A181411F2AF027001E94DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A181551F2AF029001E94DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A181601F2AF029001E94DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6A1813B1F2AF027001E94DD = {
+			isa = PBXGroup;
+			children = (
+				A6A181461F2AF028001E94DD /* KeaWatch */,
+				A6A1815B1F2AF029001E94DD /* KeaWatchTests */,
+				A6A181661F2AF029001E94DD /* KeaWatchUITests */,
+				A6A181451F2AF028001E94DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6A181451F2AF028001E94DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6A181441F2AF028001E94DD /* KeaWatch.app */,
+				A6A181581F2AF029001E94DD /* KeaWatchTests.xctest */,
+				A6A181631F2AF029001E94DD /* KeaWatchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6A181461F2AF028001E94DD /* KeaWatch */ = {
+			isa = PBXGroup;
+			children = (
+				A6A181471F2AF028001E94DD /* AppDelegate.swift */,
+				A6A181491F2AF028001E94DD /* ViewController.swift */,
+				A6A1814B1F2AF028001E94DD /* Main.storyboard */,
+				A64A4D4C1F6B35BC00DB854E /* SelectPhotoViewController.swift */,
+				038D59971F6B4DE5009FA1F7 /* NewObservationViewController.swift */,
+				4C416F081F3EC0BE00264E04 /* CameraView.swift */,
+				4C416F091F3EC0BE00264E04 /* CameraView.xib */,
+				4C416F0C1F3EC18700264E04 /* GalleryView.swift */,
+				4C416F0D1F3EC18700264E04 /* GalleryView.xib */,
+				A619F7B61F3D73AA00E3B1C4 /* HomeViewController.swift */,
+				A6A1814E1F2AF028001E94DD /* Assets.xcassets */,
+				A6A181501F2AF028001E94DD /* LaunchScreen.storyboard */,
+				A6A181531F2AF028001E94DD /* Info.plist */,
+			);
+			path = KeaWatch;
+			sourceTree = "<group>";
+		};
+		A6A1815B1F2AF029001E94DD /* KeaWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6A1815C1F2AF029001E94DD /* KeaWatchTests.swift */,
+				A6A1815E1F2AF029001E94DD /* Info.plist */,
+			);
+			path = KeaWatchTests;
+			sourceTree = "<group>";
+		};
+		A6A181661F2AF029001E94DD /* KeaWatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A6A181671F2AF029001E94DD /* KeaWatchUITests.swift */,
+				A6A181691F2AF029001E94DD /* Info.plist */,
+			);
+			path = KeaWatchUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6A181431F2AF027001E94DD /* KeaWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6A1816C1F2AF029001E94DD /* Build configuration list for PBXNativeTarget "KeaWatch" */;
+			buildPhases = (
+				A6A181401F2AF027001E94DD /* Sources */,
+				A6A181411F2AF027001E94DD /* Frameworks */,
+				A6A181421F2AF027001E94DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeaWatch;
+			productName = KeaWatch;
+			productReference = A6A181441F2AF028001E94DD /* KeaWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6A181571F2AF029001E94DD /* KeaWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6A1816F1F2AF029001E94DD /* Build configuration list for PBXNativeTarget "KeaWatchTests" */;
+			buildPhases = (
+				A6A181541F2AF029001E94DD /* Sources */,
+				A6A181551F2AF029001E94DD /* Frameworks */,
+				A6A181561F2AF029001E94DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6A1815A1F2AF029001E94DD /* PBXTargetDependency */,
+			);
+			name = KeaWatchTests;
+			productName = KeaWatchTests;
+			productReference = A6A181581F2AF029001E94DD /* KeaWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A6A181621F2AF029001E94DD /* KeaWatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6A181721F2AF029001E94DD /* Build configuration list for PBXNativeTarget "KeaWatchUITests" */;
+			buildPhases = (
+				A6A1815F1F2AF029001E94DD /* Sources */,
+				A6A181601F2AF029001E94DD /* Frameworks */,
+				A6A181611F2AF029001E94DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6A181651F2AF029001E94DD /* PBXTargetDependency */,
+			);
+			name = KeaWatchUITests;
+			productName = KeaWatchUITests;
+			productReference = A6A181631F2AF029001E94DD /* KeaWatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6A1813C1F2AF027001E94DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Kea Takers";
+				TargetAttributes = {
+					A6A181431F2AF027001E94DD = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 875TLX9Q9P;
+						ProvisioningStyle = Automatic;
+					};
+					A6A181571F2AF029001E94DD = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A6A181431F2AF027001E94DD;
+					};
+					A6A181621F2AF029001E94DD = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A6A181431F2AF027001E94DD;
+					};
+				};
+			};
+			buildConfigurationList = A6A1813F1F2AF027001E94DD /* Build configuration list for PBXProject "KakaGo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6A1813B1F2AF027001E94DD;
+			productRefGroup = A6A181451F2AF028001E94DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6A181431F2AF027001E94DD /* KeaWatch */,
+				A6A181571F2AF029001E94DD /* KeaWatchTests */,
+				A6A181621F2AF029001E94DD /* KeaWatchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6A181421F2AF027001E94DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6A181521F2AF028001E94DD /* LaunchScreen.storyboard in Resources */,
+				4C416F0F1F3EC18700264E04 /* GalleryView.xib in Resources */,
+				A6A1814F1F2AF028001E94DD /* Assets.xcassets in Resources */,
+				A6A1814D1F2AF028001E94DD /* Main.storyboard in Resources */,
+				4C416F0B1F3EC0BE00264E04 /* CameraView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A181561F2AF029001E94DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A181611F2AF029001E94DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6A181401F2AF027001E94DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6A1814A1F2AF028001E94DD /* ViewController.swift in Sources */,
+				A64A4D4D1F6B35BC00DB854E /* SelectPhotoViewController.swift in Sources */,
+				4C416F0E1F3EC18700264E04 /* GalleryView.swift in Sources */,
+				038D59981F6B4DE5009FA1F7 /* NewObservationViewController.swift in Sources */,
+				A6A181481F2AF028001E94DD /* AppDelegate.swift in Sources */,
+				4C416F0A1F3EC0BE00264E04 /* CameraView.swift in Sources */,
+				A619F7B71F3D73AA00E3B1C4 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A181541F2AF029001E94DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6A1815D1F2AF029001E94DD /* KeaWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A1815F1F2AF029001E94DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6A181681F2AF029001E94DD /* KeaWatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6A1815A1F2AF029001E94DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6A181431F2AF027001E94DD /* KeaWatch */;
+			targetProxy = A6A181591F2AF029001E94DD /* PBXContainerItemProxy */;
+		};
+		A6A181651F2AF029001E94DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6A181431F2AF027001E94DD /* KeaWatch */;
+			targetProxy = A6A181641F2AF029001E94DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6A1814B1F2AF028001E94DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6A1814C1F2AF028001E94DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6A181501F2AF028001E94DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6A181511F2AF028001E94DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6A1816A1F2AF029001E94DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6A1816B1F2AF029001E94DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6A1816D1F2AF029001E94DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 875TLX9Q9P;
+				INFOPLIST_FILE = KeaWatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mjk.KeaWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A6A1816E1F2AF029001E94DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 875TLX9Q9P;
+				INFOPLIST_FILE = KeaWatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mjk.KeaWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A6A181701F2AF029001E94DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KeaWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crazyinsomniac.KeaWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeaWatch.app/KeaWatch";
+			};
+			name = Debug;
+		};
+		A6A181711F2AF029001E94DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KeaWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crazyinsomniac.KeaWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeaWatch.app/KeaWatch";
+			};
+			name = Release;
+		};
+		A6A181731F2AF029001E94DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = KeaWatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crazyinsomniac.KeaWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KeaWatch;
+			};
+			name = Debug;
+		};
+		A6A181741F2AF029001E94DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = KeaWatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crazyinsomniac.KeaWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KeaWatch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6A1813F1F2AF027001E94DD /* Build configuration list for PBXProject "KakaGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6A1816A1F2AF029001E94DD /* Debug */,
+				A6A1816B1F2AF029001E94DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6A1816C1F2AF029001E94DD /* Build configuration list for PBXNativeTarget "KeaWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6A1816D1F2AF029001E94DD /* Debug */,
+				A6A1816E1F2AF029001E94DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6A1816F1F2AF029001E94DD /* Build configuration list for PBXNativeTarget "KeaWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6A181701F2AF029001E94DD /* Debug */,
+				A6A181711F2AF029001E94DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6A181721F2AF029001E94DD /* Build configuration list for PBXNativeTarget "KeaWatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6A181731F2AF029001E94DD /* Debug */,
+				A6A181741F2AF029001E94DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6A1813C1F2AF027001E94DD /* Project object */;
+}

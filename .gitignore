@@ -1,0 +1,9 @@
+# OS X temporary file
+.DS_Store
+
+# Individual user preferences
+xcuserdata/
+
+
+# This one file seems to be an ongoing problem
+KeaWatch/KakaGo.xcodeproj/project.xcworkspace/xcuserdata/mikey.xcuserdatad/UserInterfaceState.xcuserstate
