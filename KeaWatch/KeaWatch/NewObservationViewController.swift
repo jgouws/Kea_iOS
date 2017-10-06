@@ -49,7 +49,7 @@ class NewObservationViewController: UIViewController, UITextFieldDelegate {
         print("send");
 
         
-        let url = NSURL(string: "http://localhost:3000/uploadedfromapp")
+        let url = NSURL(string: "http://localhost:8081/uploadedfromapp")
         
         let request = NSMutableURLRequest(url: url! as URL)
         request.httpMethod = "POST"
@@ -81,20 +81,36 @@ class NewObservationViewController: UIViewController, UITextFieldDelegate {
         
         //define the data post parameter
         
-        body.append("--\(boundary)\r\n".data(using: String.Encoding.utf8)!)
-        body.append("Content-Disposition:form-data; name=\"test\"\r\n\r\n".data(using: String.Encoding.utf8)!)
-        body.append("hi\r\n".data(using: String.Encoding.utf8)!)
+        
         
         
         
         body.append("--\(boundary)\r\n".data(using: String.Encoding.utf8)!)
-        body.append("Content-Disposition:form-data; name=\"file\"; filename=\"\(fname)\"\r\n".data(using: String.Encoding.utf8)!)
+        body.append("Content-Disposition: form-data; name=\"filetoupload\"; filename=\"\(fname)\"\r\n".data(using: String.Encoding.utf8)!)
         body.append("Content-Type: \(mimetype)\r\n\r\n".data(using: String.Encoding.utf8)!)
         body.append(image_data!)
+        //body.append("imaaggee\r\n".data(using: String.Encoding.utf8)!)
         body.append("\r\n".data(using: String.Encoding.utf8)!)
         
         
-        body.append("--\(boundary)--\r\n".data(using: String.Encoding.utf8)!)
+        body.append("--\(boundary)\r\n".data(using: String.Encoding.utf8)!)
+        body.append("Content-Disposition: form-data; name=\"fields\"; filename=\"fields.txt\"\r\n".data(using: String.Encoding.utf8)!)
+        body.append("Content-Type: text/plain\r\n\r\n".data(using: String.Encoding.utf8)!)
+        body.append("Uploaded From IOS\r\n".data(using: String.Encoding.utf8)!)
+        //body.append("\r\n".data(using: String.Encoding.utf8)!)
+        
+        
+        //body.append("\r\n".data(using: String.Encoding.utf8)!)
+        
+        
+        ///body.append("--\(boundary)\r\n".data(using: String.Encoding.utf8)!)
+        //body.append("Content-Disposition: form-data; name=\"observation_type\"\r\n\r\n".data(using: String.Encoding.utf8)!)
+        //body.append("Bob\r\n".data(using: String.Encoding.utf8)!)
+        
+        
+
+        
+        body.append("--\(boundary)--".data(using: String.Encoding.utf8)!)
         
         
         
@@ -112,8 +128,8 @@ class NewObservationViewController: UIViewController, UITextFieldDelegate {
                 return
             }
             
-            let dataString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
-            //print(dataString as String)
+            //let dataString = NSString(data: body as Data, encoding: String.Encoding.utf8.rawValue)
+            //print(dataString as! String)
             
         }
         
