@@ -13,7 +13,7 @@ class NewObservationViewController: UIViewController, UITextFieldDelegate {
     // MARK: Outlets
     @IBOutlet weak var observationImageView: UIImageView!
     @IBOutlet weak var observationTextField: UITextField!
-    @IBOutlet weak var submitButton: UIBarButtonItem!
+    //@IBOutlet weak var submitButton: UIBarButtonItem!
     
     // Selected image from previous screen
     var observationPhoto: UIImage!
@@ -25,6 +25,9 @@ class NewObservationViewController: UIViewController, UITextFieldDelegate {
 
         // Set the text field's delegate
         observationTextField.delegate = self
+        
+        // set up the submit button
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Send Observation", style: .plain, target: self, action: #selector(submitObservation(_:)))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,11 +48,11 @@ class NewObservationViewController: UIViewController, UITextFieldDelegate {
     /**
      Method to submit text from the text field to the server.
      */
-    @IBAction func submitObservation(_ sender: UIBarButtonItem) {
+    func submitObservation(_ sender: UIBarButtonItem) {
         
-        var request = URLRequest(url: URL(string: "http://localhost:3000/appupload")!)
+        var request = URLRequest(url: URL(string: "http://localhost:8081/appupload")!)
         request.httpMethod = "POST"
-        let postString = "data=" + observationTextField.text!;
+        let postString = "description=" + observationTextField.text!;
         request.httpBody = postString.data(using: .utf8)
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             // check for fundamental networking error
