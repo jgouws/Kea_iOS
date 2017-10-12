@@ -49,7 +49,7 @@ class NewObservationViewController: UIViewController, UITextFieldDelegate {
         print("send");
 
         
-        let url = NSURL(string: "http://localhost:8081/uploadedfromapp")
+        let url = NSURL(string: "http://localhost:8081/appupload")
         
         let request = NSMutableURLRequest(url: url! as URL)
         request.httpMethod = "POST"
