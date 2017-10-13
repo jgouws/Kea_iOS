@@ -31,6 +31,35 @@ class KeaWatchUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        
+        let app = XCUIApplication()
+        let element = app.otherElements.containing(.navigationBar, identifier:"KeaWatch.SelectPhotoView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
+        element.tap()
+        
+        let galleryButton = app.buttons["Gallery"]
+        galleryButton.tap()
+        sleep(10)
+        app.collectionViews["PhotosGridView"].cells["Photo, Landscape, March 13, 2011, 1:17 PM"].tap()
+        
+        
+        let element2 = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
+        
+        XCTAssert(element2.exists)
+
+        
+        
+    }
+    
+    func testCameraButtonDisabled() {
+        let app = XCUIApplication()
+        let isCameraAvailable = UIImagePickerController.isSourceTypeAvailable(.camera)
+        if isCameraAvailable {
+            XCTAssertTrue(app.buttons["Camera"].isEnabled)
+        }
+        else {
+            XCTAssertFalse(app.buttons["Camera"].isEnabled)
+        }
     }
     
 }
