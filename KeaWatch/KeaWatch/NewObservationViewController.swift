@@ -50,7 +50,7 @@ class NewObservationViewController: UIViewController, UITextFieldDelegate {
      */
     func submitObservation(_ sender: UIBarButtonItem) {
         
-        let url = NSURL(string: "http://localhost:8081/appupload")
+        let url = NSURL(string: "http://localhost:8081/uploadedfromapp")
         
         let request = NSMutableURLRequest(url: url! as URL)
         request.httpMethod = "POST"
