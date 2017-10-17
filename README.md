@@ -1,0 +1,1 @@
+###### **SWEN 302 Team Keatakers documentation can be found on the [Kea Server Wiki](https://gitlab.ecs.vuw.ac.nz/swen302-2017-p1-t12/Kea_Server_Version_2/wikis/home)**
